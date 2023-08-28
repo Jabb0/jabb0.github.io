@@ -1,0 +1,115 @@
+/* space-mono-700 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./fonts/space-mono-v13-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+        url('./fonts/space-mono-v13-latin-700.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+    }
+
+    /* biorhyme-regular - latin */
+    @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'BioRhyme';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/biorhyme-v16-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+        url('./fonts/biorhyme-v16-latin-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+    }
+
+    html {
+        box-sizing: border-box;
+        font-size: 4vw;
+        height: 100%;
+        width: 100%;
+    }
+
+    body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1,
+    h2,
+    #icons {
+        font-family: 'BioRhyme', serif;
+        font-weight: normal;
+        display: block;
+        line-height: 130%;
+        width: 100%;
+    }
+
+    h1 {
+        font-family: 'Space Mono', monospace;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    #center-box {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+
+    #content {
+        padding: 0 5vw;
+        text-align: center;
+        width: 100%;
+    }
+
+    #icons {
+        margin-top: 10vw;
+    }
+
+    #linkedin-icon {
+        display: inline-block;
+        width: 9vw;
+        height: 9vw;
+        min-width: 30px;
+        min-height: 30px;
+        max-width: 90px;
+        max-height: 90px;
+        background-image: url('./images/linkedin.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        border-radius: 1px;
+        font-size: 0;
+    }
+
+    #linkedin-icon:hover {
+        background-color: #ccc;
+        cursor: pointer;
+    }
+
+    #linkedin-icon:visited {
+        background-color: #ccc;
+        cursor: pointer;
+    }
+
+    @media (min-width: 992px) {
+        html {
+            font-size: calc(24px + 1.58vw);
+        }
+    }
+
+    @media (min-aspect-ratio: 5/2) {
+        #icons {
+            margin-top: 10vh;
+        }
+    }
