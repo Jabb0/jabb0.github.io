@@ -92,14 +92,30 @@
         font-size: 0;
     }
 
-    #linkedin-icon:hover {
+    .icon:hover {
         background-color: #ccc;
         cursor: pointer;
     }
 
-    #linkedin-icon:visited {
+    .icon:visited {
         background-color: #ccc;
         cursor: pointer;
+    }
+
+    #github-icon {
+        display: inline-block;
+        width: 9vw;
+        height: 9vw;
+        min-width: 30px;
+        min-height: 30px;
+        max-width: 90px;
+        max-height: 90px;
+        background-image: url('./images/github.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        border-radius: 1px;
+        font-size: 0;
     }
 
     @media (min-width: 992px) {
